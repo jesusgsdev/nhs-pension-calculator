@@ -78,21 +78,15 @@ npm run build
 
 This app is 100% client-side and requires **no backend server**. It is pre-configured to run on GitHub Pages:
 
-1. **Push to GitHub**:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit of NHS Calculator"
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/<your-repo>.git
-   git push -u origin main
-   ```
+1. **Repository**:
+   `https://github.com/jesusgsdev/nhs-pension-calculator`
 
 2. **Enable GitHub Pages**:
-   - Go to your repository on GitHub $\to$ **Settings** $\to$ **Pages**.
+   - Go to your repository on GitHub $\to$ **Settings** $\to$ **Pages** (`https://github.com/jesusgsdev/nhs-pension-calculator/settings/pages`).
    - Under **Build and deployment** $\to$ **Source**, select **GitHub Actions**.
 
 3. **Automatic Deployment**:
-   - The included workflow in `.github/workflows/deploy.yml` will automatically run tests, build the application, and publish it to `https://<your-username>.github.io/<your-repo>/`.
+   - The included workflow in `.github/workflows/deploy.yml` automatically runs tests, builds the application, and publishes it to:
+     `https://jesusgsdev.github.io/nhs-pension-calculator/`
    - `vite.config.ts` uses `base: './'`, ensuring assets load correctly under repository subpaths.
 
