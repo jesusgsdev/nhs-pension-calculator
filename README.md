@@ -1,8 +1,15 @@
-# NHS England Nurse & Midwife Pay and Pension Calculator
+# NHS Pension Calculator & Retirement Forecast Tool (England 2025/2026)
 
-A specialized, comprehensive salary and pension calculator engineered for **NHS England Registered Nurses and Midwives**.
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Calculator-Try_Online_Now-005EB8?style=for-the-badge&logo=google-chrome&logoColor=white)](https://jesusgsdev.github.io/nhs-pension-calculator/)
+[![AfC 2025/26](https://img.shields.io/badge/Agenda_for_Change-2025%2F26_Official_Scales-0072CE?style=for-the-badge)](https://www.nhsemployers.org/articles/pay-scales-202526)
+[![GitHub Pages](https://img.shields.io/badge/Deployment-GitHub_Pages-2ea44f?style=for-the-badge&logo=github)](https://jesusgsdev.github.io/nhs-pension-calculator/)
+[![Tests](https://img.shields.io/badge/Vitest-15%20Passing-brightgreen?style=for-the-badge)](tests/)
 
-## Features
+An open-source, interactive **NHS Pension Calculator and Retirement Forecast Tool** engineered for **NHS England Registered Nurses, Midwives, Sisters, Matrons, and Clinical Specialists**.
+
+> 🔗 **Launch Calculator**: [**https://jesusgsdev.github.io/nhs-pension-calculator/**](https://jesusgsdev.github.io/nhs-pension-calculator/)
+
+---
 
 ### 1. Agenda for Change (AfC) Pay & Progression
 - **Bands 5 to 9**: Built with current 2025/26 Agenda for Change pay circular scales.
