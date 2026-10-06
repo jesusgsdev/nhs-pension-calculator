@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
               <ExternalLink className="w-3 h-3" />
             </a>
             <a
-              href="https://www.nhsemployers.org/articles/pay-scales-202425"
+              href="https://www.nhsemployers.org/articles/pay-scales-202526"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-1 hover:text-white transition-colors"

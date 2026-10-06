@@ -1,6 +1,6 @@
 import React from 'react';
 import { CareerPeriod, AfCBand, PayStep, HCASLocation, RoleType } from '../../types/afc';
-import { AFC_PAY_SCALES_2024, CAREER_PRESETS, ROLE_SAMPLE_TITLES } from '../../data/afcPayScales';
+import { AFC_PAY_SCALES_2025, CAREER_PRESETS, ROLE_SAMPLE_TITLES } from '../../data/afcPayScales';
 import { InfoTooltip } from '../common/InfoTooltip';
 import { Plus, Trash2, History, Clock, MapPin, Award } from 'lucide-react';
 
@@ -85,7 +85,7 @@ export const CareerTimelineSection: React.FC<CareerTimelineSectionProps> = ({
       {/* Career Periods List */}
       <div className="space-y-4 sm:space-y-5">
         {periods.map((period, index) => {
-          const bandData = AFC_PAY_SCALES_2024[period.band];
+          const bandData = AFC_PAY_SCALES_2025[period.band];
           const isLatest = index === periods.length - 1;
           const roleTitle = period.roleTitle || ROLE_SAMPLE_TITLES[role][period.band];
 

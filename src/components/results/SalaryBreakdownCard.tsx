@@ -53,7 +53,7 @@ export const SalaryBreakdownCard: React.FC<SalaryBreakdownCardProps> = ({
             £{salary.basicAnnualPay.toLocaleString()}
           </div>
           <div className="text-xs text-slate-500 mt-1">
-            Agenda for Change 2024/25 rate
+            Agenda for Change 2025/26 rate
           </div>
         </div>
 

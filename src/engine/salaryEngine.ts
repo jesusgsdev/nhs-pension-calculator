@@ -1,6 +1,6 @@
 import { AfCBand, PayStep, HCASLocation } from '../types/afc';
 import { ScheduleConfig, ShiftCalculationResult } from '../types/schedule';
-import { AFC_PAY_SCALES_2024 } from '../data/afcPayScales';
+import { AFC_PAY_SCALES_2025 } from '../data/afcPayScales';
 import { calculateHCAS } from '../data/hcasRates';
 import { getPensionContributionRate } from '../data/taxBrackets';
 
@@ -12,8 +12,8 @@ export const ANNUAL_FULL_TIME_HOURS = NHS_STANDARD_FULL_TIME_HOURS * WEEKS_PER_Y
  * Returns the basic full-time annual pay for an Agenda for Change band and step.
  */
 export function getBasicBandPay(band: AfCBand, step: PayStep): number {
-  const bandData = AFC_PAY_SCALES_2024[band];
-  if (!bandData) return 29970; // fallback to Band 5 entry
+  const bandData = AFC_PAY_SCALES_2025[band];
+  if (!bandData) return 31049; // fallback to Band 5 entry (2025/26)
 
   if (step === 'entry') return bandData.entry;
   if (step === 'intermediate') return bandData.intermediate ?? bandData.entry;

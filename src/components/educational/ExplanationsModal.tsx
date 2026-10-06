@@ -76,23 +76,23 @@ export const ExplanationsModal: React.FC<ExplanationsModalProps> = ({ isOpen, on
 
               <h4 className="font-bold text-slate-900 pt-2">High Cost Area Supplement (HCAS)</h4>
               <p>
-                Staff in London and the commuter belt receive an additional percentage of basic salary, subject to statutory minimum and maximum caps (2024/25 figures):
+                Staff in London and the commuter belt receive an additional percentage of basic salary, subject to statutory minimum and maximum caps (2025/26 figures):
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-1">
                 <div className="p-3 bg-slate-50 border border-slate-200 rounded-xl">
                   <strong className="text-nhs-blue block">Inner London</strong>
                   <span>20% of basic pay</span>
-                  <span className="block text-[11px] text-slate-500 mt-1">Min £5,138 • Max £8,010</span>
+                  <span className="block text-[11px] text-slate-500 mt-1">Min £5,323 • Max £8,085</span>
                 </div>
                 <div className="p-3 bg-slate-50 border border-slate-200 rounded-xl">
                   <strong className="text-nhs-blue block">Outer London</strong>
                   <span>15% of basic pay</span>
-                  <span className="block text-[11px] text-slate-500 mt-1">Min £4,313 • Max £5,436</span>
+                  <span className="block text-[11px] text-slate-500 mt-1">Min £4,457 • Max £5,582</span>
                 </div>
                 <div className="p-3 bg-slate-50 border border-slate-200 rounded-xl">
                   <strong className="text-nhs-blue block">Fringe Zone</strong>
                   <span>5% of basic pay</span>
-                  <span className="block text-[11px] text-slate-500 mt-1">Min £1,192 • Max £2,011</span>
+                  <span className="block text-[11px] text-slate-500 mt-1">Min £1,224 • Max £2,137</span>
                 </div>
               </div>
               <p className="text-slate-600 text-xs italic">

@@ -33,7 +33,7 @@ export const DEFAULT_PROFILE: PensionProfile = {
   addedYearsCount: 0,
   commutationPercentage: 0,
   includeStatePensionInTax: true,
-  fullNewStatePensionAmount: 11502,
+  fullNewStatePensionAmount: 11973,
 };
 
 function getInitialScratchPeriod(): CareerPeriod {

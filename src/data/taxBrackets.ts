@@ -9,14 +9,12 @@ export interface PensionContributionTier {
 }
 
 export const NHS_PENSION_CONTRIBUTION_TIERS: PensionContributionTier[] = [
-  { minPay: 0, maxPay: 13295, ratePercent: 5.2 },
-  { minPay: 13296, maxPay: 16831, ratePercent: 6.5 },
-  { minPay: 16832, maxPay: 22878, ratePercent: 6.5 },
-  { minPay: 22879, maxPay: 27997, ratePercent: 8.3 },
-  { minPay: 27998, maxPay: 34961, ratePercent: 9.8 },
-  { minPay: 34962, maxPay: 49550, ratePercent: 10.7 },
-  { minPay: 49551, maxPay: 62924, ratePercent: 12.5 },
-  { minPay: 62925, maxPay: Infinity, ratePercent: 13.5 },
+  { minPay: 0, maxPay: 13259, ratePercent: 5.2 },
+  { minPay: 13260, maxPay: 27797, ratePercent: 6.5 },
+  { minPay: 27798, maxPay: 33868, ratePercent: 8.3 },
+  { minPay: 33869, maxPay: 50845, ratePercent: 9.8 },
+  { minPay: 50846, maxPay: 65190, ratePercent: 10.7 },
+  { minPay: 65191, maxPay: Infinity, ratePercent: 12.5 },
 ];
 
 export function getPensionContributionRate(annualPensionablePay: number): number {
@@ -25,7 +23,7 @@ export function getPensionContributionRate(annualPensionablePay: number): number
       return tier.ratePercent;
     }
   }
-  return 13.5;
+  return 12.5;
 }
 
 export const UK_TAX_RATES = {
@@ -36,6 +34,6 @@ export const UK_TAX_RATES = {
   higherRatePercent: 0.40,
   additionalRatePercent: 0.45,
   lumpSumAllowanceCap: 268275, // Maximum tax-free lump sum in UK
-  standardNewStatePensionAnnual: 11502, // 2024/25 full new State Pension
+  standardNewStatePensionAnnual: 11973, // 2025/26 full new State Pension (£230.25/wk)
 };
 

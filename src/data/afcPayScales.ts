@@ -10,12 +10,12 @@ export interface BandPayScale {
   stepLabels: Record<PayStep, string>;
 }
 
-export const AFC_PAY_SCALES_2024: Record<AfCBand, BandPayScale> = {
+export const AFC_PAY_SCALES_2025: Record<AfCBand, BandPayScale> = {
   'Band 5': {
     band: 'Band 5',
-    entry: 29970,
-    intermediate: 32324,
-    top: 36483,
+    entry: 31049,
+    intermediate: 33487,
+    top: 37796,
     intermediateThresholdYears: 2,
     topThresholdYears: 4,
     stepLabels: {
@@ -26,9 +26,9 @@ export const AFC_PAY_SCALES_2024: Record<AfCBand, BandPayScale> = {
   },
   'Band 6': {
     band: 'Band 6',
-    entry: 37338,
-    intermediate: 39634,
-    top: 44962,
+    entry: 38682,
+    intermediate: 40823,
+    top: 46580,
     intermediateThresholdYears: 2,
     topThresholdYears: 5,
     stepLabels: {
@@ -39,9 +39,9 @@ export const AFC_PAY_SCALES_2024: Record<AfCBand, BandPayScale> = {
   },
   'Band 7': {
     band: 'Band 7',
-    entry: 46148,
-    intermediate: 48520,
-    top: 52809,
+    entry: 47810,
+    intermediate: 50273,
+    top: 54710,
     intermediateThresholdYears: 2,
     topThresholdYears: 5,
     stepLabels: {
@@ -52,8 +52,8 @@ export const AFC_PAY_SCALES_2024: Record<AfCBand, BandPayScale> = {
   },
   'Band 8a': {
     band: 'Band 8a',
-    entry: 53755,
-    top: 60504,
+    entry: 55690,
+    top: 62682,
     topThresholdYears: 5,
     stepLabels: {
       entry: 'Entry (< 5 years experience)',
@@ -63,8 +63,8 @@ export const AFC_PAY_SCALES_2024: Record<AfCBand, BandPayScale> = {
   },
   'Band 8b': {
     band: 'Band 8b',
-    entry: 62001,
-    top: 71599,
+    entry: 64455,
+    top: 74896,
     topThresholdYears: 5,
     stepLabels: {
       entry: 'Entry (< 5 years experience)',
@@ -74,8 +74,8 @@ export const AFC_PAY_SCALES_2024: Record<AfCBand, BandPayScale> = {
   },
   'Band 8c': {
     band: 'Band 8c',
-    entry: 74249,
-    top: 84850,
+    entry: 76965,
+    top: 88682,
     topThresholdYears: 5,
     stepLabels: {
       entry: 'Entry (< 5 years experience)',
@@ -85,8 +85,8 @@ export const AFC_PAY_SCALES_2024: Record<AfCBand, BandPayScale> = {
   },
   'Band 8d': {
     band: 'Band 8d',
-    entry: 88610,
-    top: 101238,
+    entry: 91342,
+    top: 105337,
     topThresholdYears: 5,
     stepLabels: {
       entry: 'Entry (< 5 years experience)',
@@ -96,8 +96,8 @@ export const AFC_PAY_SCALES_2024: Record<AfCBand, BandPayScale> = {
   },
   'Band 9': {
     band: 'Band 9',
-    entry: 105168,
-    top: 120497,
+    entry: 109179,
+    top: 125637,
     topThresholdYears: 5,
     stepLabels: {
       entry: 'Entry (< 5 years experience)',
@@ -106,6 +106,9 @@ export const AFC_PAY_SCALES_2024: Record<AfCBand, BandPayScale> = {
     },
   },
 };
+
+// Backwards compatibility alias
+export const AFC_PAY_SCALES_2024 = AFC_PAY_SCALES_2025;
 
 export const ROLE_SAMPLE_TITLES: Record<RoleType, Record<AfCBand, string>> = {
   nurse: {

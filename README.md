@@ -5,13 +5,13 @@ A specialized, comprehensive salary and pension calculator engineered for **NHS 
 ## Features
 
 ### 1. Agenda for Change (AfC) Pay & Progression
-- **Bands 5 to 9**: Built with current 2024/25 Agenda for Change pay circular scales.
+- **Bands 5 to 9**: Built with current 2025/26 Agenda for Change pay circular scales.
 - **Pay Step Points**: Supports Entry (< 2 years), Intermediate (2–4/5 years), and Top of Band (4+ or 5+ years) increments.
 - **Career History Timeline**: Add and configure multiple career eras (e.g. Band 5 Staff Nurse for 4 years $\to$ Band 6 Deputy Sister for 5 years $\to$ Band 7 Ward Sister for 15 years).
 - **High Cost Area Supplement (HCAS)**:
-  - Inner London (20%, min £5,138, max £8,010)
-  - Outer London (15%, min £4,313, max £5,436)
-  - Fringe (5%, min £1,192, max £2,011)
+  - Inner London (20%, min £5,323, max £8,085)
+  - Outer London (15%, min £4,457, max £5,582)
+  - Fringe (5%, min £1,224, max £2,137)
   - National & Custom % options
 
 ### 2. Shift Schedules & Working Hours

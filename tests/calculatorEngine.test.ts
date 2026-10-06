@@ -11,10 +11,10 @@ import { CareerPeriod } from '../src/types/afc';
 import { PensionProfile } from '../src/types/pension';
 
 describe('Agenda for Change Salary & Shifts Engine', () => {
-  it('correctly retrieves 2024/25 AfC Band 7 pay step points', () => {
-    expect(getBasicBandPay('Band 7', 'entry')).toBe(46148);
-    expect(getBasicBandPay('Band 7', 'intermediate')).toBe(48520);
-    expect(getBasicBandPay('Band 7', 'top')).toBe(52809);
+  it('correctly retrieves 2025/26 AfC Band 7 pay step points', () => {
+    expect(getBasicBandPay('Band 7', 'entry')).toBe(47810);
+    expect(getBasicBandPay('Band 7', 'intermediate')).toBe(50273);
+    expect(getBasicBandPay('Band 7', 'top')).toBe(54710);
   });
 
   it('correctly calculates Inner London HCAS with statutory max cap', () => {
@@ -28,12 +28,12 @@ describe('Agenda for Change Salary & Shifts Engine', () => {
       isUnsocialHoursPensionable: true,
     };
 
-    // Band 7 top is £52,809. 20% is £10,561.80, capped at max £8,010
+    // Band 7 top is £54,710. 20% is £10,942, capped at max £8,085
     const res = calculateSalaryAndShifts('Band 7', 'top', 'inner_london', regularSchedule);
-    expect(res.basicAnnualPay).toBe(52809);
-    expect(res.hcasAnnualPay).toBe(8010);
-    expect(res.totalGrossPay).toBe(52809 + 8010);
-    expect(res.employeePensionContributionRate).toBe(12.5);
+    expect(res.basicAnnualPay).toBe(54710);
+    expect(res.hcasAnnualPay).toBe(8085);
+    expect(res.totalGrossPay).toBe(54710 + 8085);
+    expect(res.employeePensionContributionRate).toBe(10.7);
   });
 
   it('correctly calculates rotational 11.5h shift enhancements (Section 2 AfC)', () => {
@@ -48,7 +48,7 @@ describe('Agenda for Change Salary & Shifts Engine', () => {
     };
 
     const res = calculateSalaryAndShifts('Band 5', 'top', 'national', rotationalSchedule);
-    expect(res.basicAnnualPay).toBe(36483);
+    expect(res.basicAnnualPay).toBe(37796);
     expect(res.nightSaturdayEnhancementPay).toBeGreaterThan(0);
     expect(res.sundayBankHolidayEnhancementPay).toBeGreaterThan(0);
     expect(res.totalPensionablePay).toBe(res.totalGrossPay);

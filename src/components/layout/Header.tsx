@@ -29,7 +29,7 @@ export const Header: React.FC<HeaderProps> = ({
                   Nurse & Midwife Pay and Pension Calculator
                 </h1>
                 <span className="bg-sky-400/25 text-sky-100 text-[10px] font-bold uppercase px-2 py-0.5 rounded-full border border-sky-300/30 whitespace-nowrap hidden sm:inline-block">
-                  England 2024/25
+                  England 2025/26
                 </span>
               </div>
               <p className="text-[11px] sm:text-xs text-sky-100 mt-0.5 hidden md:block">
