@@ -3,7 +3,18 @@
 [![Live Demo](https://img.shields.io/badge/🚀_Live_Calculator-Try_Online_Now-005EB8?style=for-the-badge&logo=google-chrome&logoColor=white)](https://jesusgsdev.github.io/nhs-pension-calculator/)
 [![AfC 2025/26](https://img.shields.io/badge/Agenda_for_Change-2025%2F26_Official_Scales-0072CE?style=for-the-badge)](https://www.nhsemployers.org/articles/pay-scales-202526)
 [![GitHub Pages](https://img.shields.io/badge/Deployment-GitHub_Pages-2ea44f?style=for-the-badge&logo=github)](https://jesusgsdev.github.io/nhs-pension-calculator/)
-[![Tests](https://img.shields.io/badge/Vitest-15%20Passing-brightgreen?style=for-the-badge)](tests/)
+[![CI](https://github.com/jesusgsdev/nhs-pension-calculator/actions/workflows/ci.yml/badge.svg)](https://github.com/jesusgsdev/nhs-pension-calculator/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/jesusgsdev/nhs-pension-calculator/actions/workflows/codeql.yml/badge.svg)](https://github.com/jesusgsdev/nhs-pension-calculator/actions/workflows/codeql.yml)
+[![Deploy](https://github.com/jesusgsdev/nhs-pension-calculator/actions/workflows/deploy.yml/badge.svg)](https://github.com/jesusgsdev/nhs-pension-calculator/actions/workflows/deploy.yml)
+[![Coverage](https://img.shields.io/endpoint?url=https%3A%2F%2Fjesusgsdev.github.io%2Fnhs-pension-calculator%2Fcoverage-badge.json&style=flat-square)](https://jesusgsdev.github.io/nhs-pension-calculator/coverage/)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/jesusgsdev/nhs-pension-calculator/badge)](https://scorecard.dev/viewer/?uri=github.com/jesusgsdev/nhs-pension-calculator)
+[![License: MIT](https://img.shields.io/github/license/jesusgsdev/nhs-pension-calculator?style=flat-square)](LICENSE)
+[![Last commit](https://img.shields.io/github/last-commit/jesusgsdev/nhs-pension-calculator?style=flat-square)](https://github.com/jesusgsdev/nhs-pension-calculator/commits/main)
+[![Dependabot](https://img.shields.io/badge/Dependabot-enabled-025e8c?style=flat-square&logo=dependabot&logoColor=white)](.github/dependabot.yml)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-6-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vite.dev/)
+[![Vitest](https://img.shields.io/badge/tested_with-Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white)](tests/)
 
 An open-source, interactive **NHS Pension Calculator and Retirement Forecast Tool** engineered for **NHS England Registered Nurses, Midwives, Sisters, Matrons, and Clinical Specialists**.
 
@@ -74,6 +85,11 @@ npm run dev
 npm test
 ```
 
+### Test Coverage
+```bash
+npm run test:coverage   # text summary + HTML report in ./coverage
+```
+
 ### Build for Production
 ```bash
 npm run build
@@ -97,3 +113,14 @@ This app is 100% client-side and requires **no backend server**. It is pre-confi
      `https://jesusgsdev.github.io/nhs-pension-calculator/`
    - `vite.config.ts` uses `base: './'`, ensuring assets load correctly under repository subpaths.
 
+---
+
+## Contributing & Security
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to propose changes and [SECURITY.md](SECURITY.md) for reporting vulnerabilities.
+
+## License
+
+Released under the [MIT License](LICENSE).
+
+> **Disclaimer**: This tool provides estimates for illustration only and is not financial advice or an official NHS Pensions quote.

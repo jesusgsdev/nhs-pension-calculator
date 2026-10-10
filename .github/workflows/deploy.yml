@@ -34,11 +34,17 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run tests
-        run: npm test
+      - name: Run tests with coverage
+        run: npm run test:coverage
 
       - name: Build static site
         run: npm run build
+
+      - name: Publish coverage report and badge data
+        run: |
+          mkdir -p dist/coverage
+          cp -r coverage/. dist/coverage/
+          node scripts/coverage-badge.mjs coverage/coverage-summary.json dist/coverage-badge.json
 
       - name: Setup Pages
         uses: actions/configure-pages@v6
