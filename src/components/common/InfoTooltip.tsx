@@ -16,7 +16,7 @@ export const InfoTooltip: React.FC<InfoTooltipProps> = ({ content, title }) => {
         onClick={() => setIsOpen(!isOpen)}
         onMouseEnter={() => setIsOpen(true)}
         onMouseLeave={() => setIsOpen(false)}
-        className="text-nhs-blue hover:text-nhs-darkBlue p-0.5 rounded-full hover:bg-blue-50 transition-colors focus:outline-none focus:ring-2 focus:ring-nhs-blue"
+        className="text-nhs-blue hover:text-nhs-darkBlue p-0.5 rounded-full hover:bg-blue-50 transition-colors focus:outline-hidden focus:ring-2 focus:ring-nhs-blue"
         aria-label="More information"
       >
         <Info className="w-4 h-4" />

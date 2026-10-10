@@ -30,7 +30,7 @@ export const StatCard: React.FC<StatCardProps> = ({
     <div
       className={`rounded-2xl p-3.5 sm:p-5 lg:p-6 border transition-all flex flex-col justify-between min-h-[115px] sm:min-h-[135px] ${
         highlight
-          ? 'bg-gradient-to-br from-blue-50 to-indigo-50/70 border-blue-300 shadow-sm ring-2 ring-blue-500/15'
+          ? 'bg-gradient-to-br from-blue-50 to-indigo-50/70 border-blue-300 shadow-xs ring-2 ring-blue-500/15'
           : 'bg-white border-slate-200 shadow-xs hover:shadow-md'
       }`}
     >

@@ -91,7 +91,7 @@ export const ScheduleSection: React.FC<ScheduleSectionProps> = ({
   };
 
   return (
-    <div className="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200 shadow-sm space-y-6">
+    <div className="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200 shadow-xs space-y-6">
       
       {/* Title */}
       <div className="border-b border-slate-100 pb-5">
@@ -118,7 +118,7 @@ export const ScheduleSection: React.FC<ScheduleSectionProps> = ({
               onClick={() => handleSelectPattern(pat)}
               className={`p-4 rounded-xl border text-left cursor-pointer transition-all flex flex-col justify-between ${
                 isSelected
-                  ? 'border-nhs-blue bg-blue-50/60 shadow-sm ring-2 ring-blue-500/20'
+                  ? 'border-nhs-blue bg-blue-50/60 shadow-xs ring-2 ring-blue-500/20'
                   : 'border-slate-200 hover:border-slate-300 hover:bg-slate-50'
               }`}
             >
@@ -166,7 +166,7 @@ export const ScheduleSection: React.FC<ScheduleSectionProps> = ({
               max="48"
               value={schedule.contractedHoursPerWeek}
               onChange={(e) => onScheduleChange({ contractedHoursPerWeek: Number(e.target.value) })}
-              className="w-full text-xs font-bold px-3 py-2 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-nhs-blue"
+              className="w-full text-xs font-bold px-3 py-2 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white focus:outline-hidden focus:ring-2 focus:ring-nhs-blue"
             />
           </div>
 
@@ -183,7 +183,7 @@ export const ScheduleSection: React.FC<ScheduleSectionProps> = ({
                 max="14"
                 value={schedule.shiftLengthHours}
                 onChange={(e) => onScheduleChange({ shiftLengthHours: Number(e.target.value) })}
-                className="w-full text-xs font-bold px-3 py-2 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-nhs-blue"
+                className="w-full text-xs font-bold px-3 py-2 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white focus:outline-hidden focus:ring-2 focus:ring-nhs-blue"
               />
               <span className="absolute right-3 top-2 text-xs text-slate-400 font-semibold">hrs</span>
             </div>
@@ -202,7 +202,7 @@ export const ScheduleSection: React.FC<ScheduleSectionProps> = ({
                 max="90"
                 value={schedule.breakMinutes}
                 onChange={(e) => onScheduleChange({ breakMinutes: Number(e.target.value) })}
-                className="w-full text-xs font-bold px-3 py-2 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-nhs-blue"
+                className="w-full text-xs font-bold px-3 py-2 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white focus:outline-hidden focus:ring-2 focus:ring-nhs-blue"
               />
               <span className="absolute right-3 top-2 text-xs text-slate-400 font-semibold">mins</span>
             </div>
@@ -278,7 +278,7 @@ export const ScheduleSection: React.FC<ScheduleSectionProps> = ({
               onChange={(e) => onScheduleChange({ isUnsocialHoursPensionable: e.target.checked })}
               className="sr-only peer"
             />
-            <div className="w-11 h-6 bg-slate-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-nhs-blue"></div>
+            <div className="w-11 h-6 bg-slate-300 peer-focus:outline-hidden rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-nhs-blue"></div>
           </label>
         </div>
 

@@ -8,7 +8,7 @@ interface SchemeBreakdownCardProps {
 
 export const SchemeBreakdownCard: React.FC<SchemeBreakdownCardProps> = ({ projection }) => {
   return (
-    <div className="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200 shadow-sm space-y-5 w-full">
+    <div className="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200 shadow-xs space-y-5 w-full">
       
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-4">

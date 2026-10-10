@@ -43,7 +43,7 @@ export const CareerTimelineSection: React.FC<CareerTimelineSectionProps> = ({
   const presets = CAREER_PRESETS[role];
 
   return (
-    <div className="bg-white rounded-2xl p-4 sm:p-6 lg:p-7 border border-slate-200 shadow-sm space-y-5 sm:space-y-6">
+    <div className="bg-white rounded-2xl p-4 sm:p-6 lg:p-7 border border-slate-200 shadow-xs space-y-5 sm:space-y-6">
       
       {/* Header & Quick Templates */}
       <div className="flex flex-col gap-3 border-b border-slate-100 pb-4 sm:pb-5">
@@ -94,14 +94,14 @@ export const CareerTimelineSection: React.FC<CareerTimelineSectionProps> = ({
               key={period.id}
               className={`p-3.5 sm:p-5 rounded-2xl border transition-all ${
                 isLatest
-                  ? 'bg-blue-50/40 border-blue-200 shadow-sm ring-1 ring-blue-500/20'
+                  ? 'bg-blue-50/40 border-blue-200 shadow-xs ring-1 ring-blue-500/20'
                   : 'bg-slate-50/70 border-slate-200 hover:border-slate-300'
               }`}
             >
               {/* Period Header */}
               <div className="flex items-center justify-between gap-2 mb-3 sm:mb-4 pb-2.5 sm:pb-3 border-b border-slate-200/70">
                 <div className="flex items-center space-x-2.5 min-w-0">
-                  <span className="w-6 h-6 sm:w-7 sm:h-7 rounded-lg sm:rounded-xl bg-nhs-blue text-white text-xs font-extrabold flex items-center justify-center shadow-sm shrink-0">
+                  <span className="w-6 h-6 sm:w-7 sm:h-7 rounded-lg sm:rounded-xl bg-nhs-blue text-white text-xs font-extrabold flex items-center justify-center shadow-xs shrink-0">
                     {index + 1}
                   </span>
                   <div className="min-w-0">
@@ -158,7 +158,7 @@ export const CareerTimelineSection: React.FC<CareerTimelineSectionProps> = ({
                         const title = ROLE_SAMPLE_TITLES[role][newBand] || 'Clinical Staff';
                         onUpdatePeriod(period.id, { band: newBand, roleTitle: title });
                       }}
-                      className="w-full text-base sm:text-xs font-bold px-3 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-nhs-blue text-slate-800"
+                      className="w-full text-base sm:text-xs font-bold px-3 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-hidden focus:ring-2 focus:ring-nhs-blue text-slate-800"
                     >
                       {BANDS.map((b) => (
                         <option key={b} value={b}>
@@ -180,7 +180,7 @@ export const CareerTimelineSection: React.FC<CareerTimelineSectionProps> = ({
                     <select
                       value={period.step}
                       onChange={(e) => onUpdatePeriod(period.id, { step: e.target.value as PayStep })}
-                      className="w-full text-base sm:text-xs font-bold px-3 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-nhs-blue text-slate-800"
+                      className="w-full text-base sm:text-xs font-bold px-3 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-hidden focus:ring-2 focus:ring-nhs-blue text-slate-800"
                     >
                       <option value="entry">{bandData.stepLabels.entry}</option>
                       {bandData.intermediate && (
@@ -208,7 +208,7 @@ export const CareerTimelineSection: React.FC<CareerTimelineSectionProps> = ({
                     <select
                       value={period.hcasLocation}
                       onChange={(e) => onUpdatePeriod(period.id, { hcasLocation: e.target.value as HCASLocation })}
-                      className="w-full text-base sm:text-xs font-bold px-3 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-nhs-blue text-slate-800"
+                      className="w-full text-base sm:text-xs font-bold px-3 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-hidden focus:ring-2 focus:ring-nhs-blue text-slate-800"
                     >
                       {HCAS_OPTIONS.map((h) => (
                         <option key={h.value} value={h.value}>
@@ -242,7 +242,7 @@ export const CareerTimelineSection: React.FC<CareerTimelineSectionProps> = ({
                     <select
                       value={period.partTimeFte}
                       onChange={(e) => onUpdatePeriod(period.id, { partTimeFte: Number(e.target.value) })}
-                      className="w-full text-base sm:text-xs font-bold px-3 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-nhs-blue text-slate-800"
+                      className="w-full text-base sm:text-xs font-bold px-3 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-hidden focus:ring-2 focus:ring-nhs-blue text-slate-800"
                     >
                       <option value="1.0">1.0 WTE (Full-time: 37.5h)</option>
                       <option value="0.8">0.8 WTE (Part-time: 30.0h)</option>
@@ -299,7 +299,7 @@ export const CareerTimelineSection: React.FC<CareerTimelineSectionProps> = ({
       <button
         type="button"
         onClick={onAddPeriod}
-        className="w-full py-3.5 px-4 rounded-2xl border-2 border-dashed border-slate-300 hover:border-nhs-blue hover:bg-blue-50/50 text-slate-600 hover:text-nhs-blue text-xs font-bold flex items-center justify-center space-x-2 transition-all focus:outline-none min-h-[44px]"
+        className="w-full py-3.5 px-4 rounded-2xl border-2 border-dashed border-slate-300 hover:border-nhs-blue hover:bg-blue-50/50 text-slate-600 hover:text-nhs-blue text-xs font-bold flex items-center justify-center space-x-2 transition-all focus:outline-hidden min-h-[44px]"
       >
         <Plus className="w-4 h-4" />
         <span>Add Next Career Stage / Promotional Banding</span>

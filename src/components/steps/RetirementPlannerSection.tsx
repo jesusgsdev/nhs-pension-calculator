@@ -16,7 +16,7 @@ export const RetirementPlannerSection: React.FC<RetirementPlannerSectionProps> =
 }) => {
 
   return (
-    <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-6">
+    <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-xs space-y-6">
       
       {/* Title */}
       <div className="border-b border-slate-100 pb-4">
@@ -145,7 +145,7 @@ export const RetirementPlannerSection: React.FC<RetirementPlannerSectionProps> =
             onChange={(e) => onProfileChange({ includeStatePensionInTax: e.target.checked })}
             className="sr-only peer"
           />
-          <div className="w-11 h-6 bg-slate-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-nhs-blue"></div>
+          <div className="w-11 h-6 bg-slate-300 peer-focus:outline-hidden rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-nhs-blue"></div>
         </label>
       </div>
 

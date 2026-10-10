@@ -39,7 +39,7 @@ export const SaveProfileModal: React.FC<SaveProfileModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4">
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4">
       <div className="bg-white rounded-2xl max-w-md w-full shadow-2xl border border-slate-200 overflow-hidden animate-fadeIn">
         
         {/* Header */}
@@ -74,7 +74,7 @@ export const SaveProfileModal: React.FC<SaveProfileModalProps> = ({
                 if (error) setError('');
               }}
               placeholder="e.g., Band 7 Ward Sister (London), Preceptorship Plan..."
-              className="w-full px-3.5 py-2.5 text-sm font-semibold rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-nhs-blue"
+              className="w-full px-3.5 py-2.5 text-sm font-semibold rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-hidden focus:ring-2 focus:ring-nhs-blue"
             />
             {error && (
               <p className="text-xs text-red-600 font-medium mt-1">{error}</p>

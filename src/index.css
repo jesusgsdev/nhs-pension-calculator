@@ -1,8 +1,33 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-nhs-blue: #005EB8;
+  --color-nhs-darkBlue: #003087;
+  --color-nhs-brightBlue: #0072CE;
+  --color-nhs-lightBlue: #41B6E6;
+  --color-nhs-aquaBlue: #00A9CE;
+  --color-nhs-green: #007F3B;
+  --color-nhs-lightGreen: #00A499;
+  --color-nhs-yellow: #FFB81C;
+  --color-nhs-warmYellow: #FFB81C;
+  --color-nhs-darkPink: #7C2855;
+  --color-nhs-red: #DA291C;
+  --color-nhs-paleGrey: #F0F4F5;
+  --color-nhs-midGrey: #768692;
+  --color-nhs-darkGrey: #425563;
+  --color-nhs-text: #212B32;
+}
 
 @layer base {
+  /* Tailwind 4 defaults borders to currentColor; keep the v3 look */
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+
   body {
     @apply text-slate-800 bg-slate-50 antialiased font-sans;
   }

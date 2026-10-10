@@ -13,7 +13,7 @@ export const PensionBoostSection: React.FC<PensionBoostSectionProps> = ({
   onProfileChange,
 }) => {
   return (
-    <div className="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200 shadow-sm space-y-6">
+    <div className="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200 shadow-xs space-y-6">
       
       {/* Title */}
       <div className="border-b border-slate-100 pb-5">
@@ -132,7 +132,7 @@ export const PensionBoostSection: React.FC<PensionBoostSectionProps> = ({
               max="7000"
               value={profile.additionalPensionPurchased}
               onChange={(e) => onProfileChange({ additionalPensionPurchased: Number(e.target.value) })}
-              className="w-full text-xs font-bold pl-8 pr-3 py-2.5 rounded-xl border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-nhs-blue"
+              className="w-full text-xs font-bold pl-8 pr-3 py-2.5 rounded-xl border border-slate-200 bg-white focus:outline-hidden focus:ring-2 focus:ring-nhs-blue"
               placeholder="0"
             />
           </div>
@@ -158,7 +158,7 @@ export const PensionBoostSection: React.FC<PensionBoostSectionProps> = ({
                 onChange={(e) => onProfileChange({ hasAddedYears: e.target.checked })}
                 className="sr-only peer"
               />
-              <div className="w-11 h-6 bg-slate-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-purple-600"></div>
+              <div className="w-11 h-6 bg-slate-300 peer-focus:outline-hidden rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-purple-600"></div>
             </label>
           </div>
 
@@ -174,7 +174,7 @@ export const PensionBoostSection: React.FC<PensionBoostSectionProps> = ({
                 step="0.5"
                 value={profile.addedYearsCount}
                 onChange={(e) => onProfileChange({ addedYearsCount: Number(e.target.value) })}
-                className="w-full text-xs font-bold px-3 py-2.5 rounded-xl border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-nhs-blue"
+                className="w-full text-xs font-bold px-3 py-2.5 rounded-xl border border-slate-200 bg-white focus:outline-hidden focus:ring-2 focus:ring-nhs-blue"
               />
             </div>
           )}

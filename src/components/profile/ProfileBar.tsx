@@ -97,7 +97,7 @@ export const ProfileBar: React.FC<ProfileBarProps> = ({
                     onSelectProfile(e.target.value);
                   }
                 }}
-                className="w-full appearance-none bg-slate-50 hover:bg-slate-100/80 border border-slate-200 text-slate-700 text-xs font-semibold rounded-xl pl-3 pr-8 py-2 min-h-[38px] focus:outline-none focus:ring-2 focus:ring-nhs-blue transition-colors cursor-pointer"
+                className="w-full appearance-none bg-slate-50 hover:bg-slate-100/80 border border-slate-200 text-slate-700 text-xs font-semibold rounded-xl pl-3 pr-8 py-2 min-h-[38px] focus:outline-hidden focus:ring-2 focus:ring-nhs-blue transition-colors cursor-pointer"
               >
                 <option value="" disabled={Boolean(activeProfileId)}>
                   {savedProfiles.length === 0

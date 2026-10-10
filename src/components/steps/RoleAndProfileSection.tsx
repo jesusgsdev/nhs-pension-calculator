@@ -18,7 +18,7 @@ export const RoleAndProfileSection: React.FC<RoleAndProfileSectionProps> = ({
   onProfileChange,
 }) => {
   return (
-    <div className="bg-white rounded-2xl p-4 sm:p-6 lg:p-7 border border-slate-200 shadow-sm space-y-5 sm:space-y-6">
+    <div className="bg-white rounded-2xl p-4 sm:p-6 lg:p-7 border border-slate-200 shadow-xs space-y-5 sm:space-y-6">
       <div className="flex items-center justify-between border-b border-slate-100 pb-3 sm:pb-4">
         <div>
           <h2 className="text-base sm:text-lg font-bold text-slate-900 flex items-center">
@@ -47,7 +47,7 @@ export const RoleAndProfileSection: React.FC<RoleAndProfileSectionProps> = ({
               onClick={() => onRoleChange('nurse')}
               className={`flex items-center justify-center space-x-2 py-3 px-3 rounded-xl border text-xs font-bold transition-all min-h-[42px] ${
                 role === 'nurse'
-                  ? 'border-nhs-blue bg-blue-50 text-nhs-blue shadow-sm ring-2 ring-blue-500/20'
+                  ? 'border-nhs-blue bg-blue-50 text-nhs-blue shadow-xs ring-2 ring-blue-500/20'
                   : 'border-slate-200 text-slate-600 hover:border-slate-300 hover:bg-slate-50'
               }`}
             >
@@ -59,7 +59,7 @@ export const RoleAndProfileSection: React.FC<RoleAndProfileSectionProps> = ({
               onClick={() => onRoleChange('midwife')}
               className={`flex items-center justify-center space-x-2 py-3 px-3 rounded-xl border text-xs font-bold transition-all min-h-[42px] ${
                 role === 'midwife'
-                  ? 'border-nhs-blue bg-blue-50 text-nhs-blue shadow-sm ring-2 ring-blue-500/20'
+                  ? 'border-nhs-blue bg-blue-50 text-nhs-blue shadow-xs ring-2 ring-blue-500/20'
                   : 'border-slate-200 text-slate-600 hover:border-slate-300 hover:bg-slate-50'
               }`}
             >
@@ -82,7 +82,7 @@ export const RoleAndProfileSection: React.FC<RoleAndProfileSectionProps> = ({
                 max="75"
                 value={profile.currentAge}
                 onChange={(e) => onProfileChange({ currentAge: Number(e.target.value) })}
-                className="w-full px-3 py-2.5 text-base sm:text-sm font-bold rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-nhs-blue focus:border-nhs-blue bg-slate-50 min-h-[42px]"
+                className="w-full px-3 py-2.5 text-base sm:text-sm font-bold rounded-xl border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-nhs-blue focus:border-nhs-blue bg-slate-50 min-h-[42px]"
               />
               <span className="absolute right-3 top-3 text-xs text-slate-400 font-semibold">yrs</span>
             </div>
@@ -103,7 +103,7 @@ export const RoleAndProfileSection: React.FC<RoleAndProfileSectionProps> = ({
                 max="2026"
                 value={profile.startCareerYear}
                 onChange={(e) => onProfileChange({ startCareerYear: Number(e.target.value) })}
-                className="w-full px-3 py-2.5 text-base sm:text-sm font-bold rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-nhs-blue focus:border-nhs-blue bg-slate-50 min-h-[42px]"
+                className="w-full px-3 py-2.5 text-base sm:text-sm font-bold rounded-xl border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-nhs-blue focus:border-nhs-blue bg-slate-50 min-h-[42px]"
               />
               <Calendar className="w-3.5 h-3.5 absolute right-3 top-3 text-slate-400" />
             </div>
@@ -170,7 +170,7 @@ export const RoleAndProfileSection: React.FC<RoleAndProfileSectionProps> = ({
               onChange={(e) => onProfileChange({ hasSpecialClassStatus: e.target.checked })}
               className="sr-only peer"
             />
-            <div className="w-11 h-6 bg-slate-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-amber-500"></div>
+            <div className="w-11 h-6 bg-slate-300 peer-focus:outline-hidden rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-amber-500"></div>
           </label>
         </div>
       </div>

@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
         
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pb-6 border-b border-slate-800">
           <div className="flex items-center space-x-2 text-white font-semibold">
-            <span className="bg-nhs-blue text-white px-2 py-0.5 rounded text-xs font-black">NHS</span>
+            <span className="bg-nhs-blue text-white px-2 py-0.5 rounded-sm text-xs font-black">NHS</span>
             <span>England Nurse & Midwife Pay & Pension Calculator</span>
           </div>
 

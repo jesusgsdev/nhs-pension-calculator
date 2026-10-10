@@ -21,7 +21,7 @@ export const ExplainCard: React.FC<ExplainCardProps> = ({
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full px-4 py-3 flex items-center justify-between text-left focus:outline-none focus:bg-slate-100"
+        className="w-full px-4 py-3 flex items-center justify-between text-left focus:outline-hidden focus:bg-slate-100"
       >
         <div className="flex items-center space-x-2">
           <HelpCircle className="w-4 h-4 text-nhs-blue shrink-0" />

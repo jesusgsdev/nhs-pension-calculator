@@ -61,7 +61,7 @@ export const RetirementAgeChart: React.FC<RetirementAgeChartProps> = ({
   }, [careerPeriods, schedule, profile]);
 
   return (
-    <div className="bg-white rounded-2xl p-4 sm:p-6 lg:p-7 border border-slate-200 shadow-sm space-y-4 w-full">
+    <div className="bg-white rounded-2xl p-4 sm:p-6 lg:p-7 border border-slate-200 shadow-xs space-y-4 w-full">
       
       {/* Header with View Mode Switcher */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-100 pb-4">

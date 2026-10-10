@@ -94,7 +94,7 @@ export function App() {
         {/* Welcome Banner */}
         <div className="bg-gradient-to-r from-nhs-blue via-nhs-darkBlue to-slate-900 text-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 lg:p-9 shadow-md relative overflow-hidden w-full">
           <div className="relative z-10 max-w-4xl space-y-2 sm:space-y-2.5">
-            <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-white/10 text-sky-200 text-xs font-bold backdrop-blur-sm border border-white/10">
+            <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-white/10 text-sky-200 text-xs font-bold backdrop-blur-xs border border-white/10">
               <Sparkles className="w-3.5 h-3.5 text-yellow-300" />
               <span>NHS England {role === 'nurse' ? 'Registered Nurses' : 'Midwives'}</span>
             </div>
@@ -316,7 +316,7 @@ export function App() {
             <button
               type="button"
               onClick={() => handleTabSwitch(activeTab === 'results' ? 'inputs' : 'results')}
-              className="py-2 px-3 rounded-xl bg-nhs-blue text-white text-xs font-bold hover:bg-nhs-darkBlue transition-colors flex items-center space-x-1 shadow-sm shrink-0 min-h-[36px]"
+              className="py-2 px-3 rounded-xl bg-nhs-blue text-white text-xs font-bold hover:bg-nhs-darkBlue transition-colors flex items-center space-x-1 shadow-xs shrink-0 min-h-[36px]"
             >
               <span>{activeTab === 'results' ? 'Inputs' : 'Breakdown'}</span>
               <ChevronRight className="w-3.5 h-3.5" />

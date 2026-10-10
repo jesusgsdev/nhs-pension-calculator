@@ -15,7 +15,7 @@ export const McCloudCard: React.FC<McCloudCardProps> = ({ mccloud }) => {
   const legacyIsBetter = mccloud.recommendedChoice === 'legacy';
 
   return (
-    <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
+    <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-xs space-y-4">
       <div className="flex items-center justify-between border-b border-slate-100 pb-3">
         <div className="flex items-center space-x-2">
           <Scale className="w-5 h-5 text-nhs-blue" />
@@ -44,7 +44,7 @@ export const McCloudCard: React.FC<McCloudCardProps> = ({ mccloud }) => {
         {/* Option A: Legacy Scheme */}
         <div className={`p-4 rounded-xl border transition-all ${
           legacyIsBetter
-            ? 'bg-blue-50/50 border-blue-300 ring-1 ring-blue-400/20 shadow-sm'
+            ? 'bg-blue-50/50 border-blue-300 ring-1 ring-blue-400/20 shadow-xs'
             : 'bg-slate-50 border-slate-200'
         }`}>
           <div className="flex items-center justify-between mb-2">
@@ -75,7 +75,7 @@ export const McCloudCard: React.FC<McCloudCardProps> = ({ mccloud }) => {
         {/* Option B: 2015 CARE */}
         <div className={`p-4 rounded-xl border transition-all ${
           !legacyIsBetter
-            ? 'bg-blue-50/50 border-blue-300 ring-1 ring-blue-400/20 shadow-sm'
+            ? 'bg-blue-50/50 border-blue-300 ring-1 ring-blue-400/20 shadow-xs'
             : 'bg-slate-50 border-slate-200'
         }`}>
           <div className="flex items-center justify-between mb-2">

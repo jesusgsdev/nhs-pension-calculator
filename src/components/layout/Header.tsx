@@ -20,7 +20,7 @@ export const Header: React.FC<HeaderProps> = ({
           
           {/* Logo & Title */}
           <div className="flex items-center space-x-3">
-            <div className="bg-white text-nhs-blue px-2.5 py-1 font-black text-lg sm:text-xl rounded tracking-tighter shadow-sm flex items-center select-none shrink-0">
+            <div className="bg-white text-nhs-blue px-2.5 py-1 font-black text-lg sm:text-xl rounded-sm tracking-tighter shadow-xs flex items-center select-none shrink-0">
               NHS
             </div>
             <div className="min-w-0">
@@ -48,7 +48,7 @@ export const Header: React.FC<HeaderProps> = ({
                 onClick={() => onRoleChange('nurse')}
                 className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all min-h-[34px] ${
                   role === 'nurse'
-                    ? 'bg-white text-nhs-blue shadow-sm'
+                    ? 'bg-white text-nhs-blue shadow-xs'
                     : 'text-sky-100 hover:text-white hover:bg-white/10'
                 }`}
               >
@@ -60,7 +60,7 @@ export const Header: React.FC<HeaderProps> = ({
                 onClick={() => onRoleChange('midwife')}
                 className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all min-h-[34px] ${
                   role === 'midwife'
-                    ? 'bg-white text-nhs-blue shadow-sm'
+                    ? 'bg-white text-nhs-blue shadow-xs'
                     : 'text-sky-100 hover:text-white hover:bg-white/10'
                 }`}
               >
@@ -73,7 +73,7 @@ export const Header: React.FC<HeaderProps> = ({
             <button
               type="button"
               onClick={onOpenGuide}
-              className="flex items-center space-x-1.5 px-3 sm:px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white/15 hover:bg-white/25 border border-white/20 transition-all text-white focus:outline-none focus:ring-2 focus:ring-white min-h-[34px]"
+              className="flex items-center space-x-1.5 px-3 sm:px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white/15 hover:bg-white/25 border border-white/20 transition-all text-white focus:outline-hidden focus:ring-2 focus:ring-white min-h-[34px]"
             >
               <BookOpen className="w-3.5 h-3.5" />
               <span>Guide</span>
